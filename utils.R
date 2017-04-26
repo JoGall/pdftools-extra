@@ -4,7 +4,7 @@ require(pdftools)
 # FUNCTIONS
 #=================================================================================
 
-# `pdf_cols()` reads a PDF with text split into columns
+# 'pdf_cols()' reads a PDF with text split into columns
 trim <- function (x) gsub("^\\s+|\\s+$", "", x)
 
 read_text <- function(text, n_col) {
@@ -48,7 +48,7 @@ pdf_cols <- function(filename, n_col) {
 }
 
 
-#`concat_hyphens()` function concatenates words split by a breaking hyphen
+#'concat_hyphens()' function concatenates words split by a breaking hyphen
 concat_hyphens <- function(result) {
 
     for(i in 1:(length(result)-1)) {
